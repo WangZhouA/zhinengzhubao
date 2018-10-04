@@ -1,0 +1,1 @@
+include ':app', ':chlibrary', ':keyboardchangelib', ':photoview'

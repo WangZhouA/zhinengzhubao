@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">smartjewelry</string>
+    <string name="login_number">输入用户名</string>
+    <string name="login_password">输入用户密码</string>
+    <string name="loging">登录</string>
+    <string name="reigst">注册</string>
+    <string name="repass">忘记密码？</string>
+    <string name="phone">输入您的电话号码</string>
+    <string name="pass">输入登录密码</string>
+    <string name="code">输入验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="left_zhubao">左手首饰</string>
+    <string name="exit_login_msg">是否需要退出登录！</string>
+    <string name="bind_sure">绑定成功</string>
+    <string name="exit_login">退出登录</string>
+    <string name="determine">确定</string>
+    <string name="cancel">取消</string>
+    <string name="Please_check_whether_the_account_password_is_correct">请检查账号密码是否正确</string>
+    <string name="re_password">忘记密码</string>
+    <string name="redervice_name">修改设备名称</string>
+    <string name="Please_insert_memory_card">请插入内存卡</string>
+    <string name="cannot_be_empty">修改信息不能为空哦</string>
+    <string name="Re_name">修改名字</string>
+    <string name="Re_phone">修改电话号码</string>
+    <string name="Re_address">修改住址</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="title">请选择时间</string>
+    <string name="save">保存</string>
+</resources>

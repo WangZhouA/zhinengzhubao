@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/header_bar_small"></include>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+
+        >
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@mipmap/bg_hudu"></ImageView>
+
+        <test.com.shoushi.view.CircleImageView
+            android:id="@+id/user_touxiang"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/img_yonghumr"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号：" />
+
+            <TextView
+                android:id="@+id/zhanghao_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15827707520" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="昵称"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:textColor="#313131"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/img_name"
+
+                android:gravity="center"
+                android:text="傻妞"
+                android:textColor="#A8A8A8"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:paddingRight="5dp"
+                android:id="@+id/img_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/btn_xiyibu" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ECECEC"
+            />
+
+
+        <!--性别-->
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#55FFFFFF"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="电话"
+                android:layout_marginLeft="19dp"
+                android:gravity="center"
+                android:textColor="#A8A8A8"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginStart="19dp" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/img_gender"
+                android:gravity="center"
+                android:text="18888888888"
+                android:textColor="#A8A8A8"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/img_gender"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/btn_xiyibu" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ECECEC"
+            />
+
+        <!--详细地址-->
+
+        <RelativeLayout
+            android:id="@+id/rl_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="住址"
+                android:layout_marginLeft="19dp"
+                android:gravity="center"
+                android:textColor="#313131"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="19dp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/img_ages"
+                android:gravity="center"
+                android:layout_marginLeft="200dp"
+                android:text="北京市北京市东城区北京市东城区西长安街靠近天安门广场-国旗"
+                android:singleLine="true"
+                android:textColor="#A8A8A8"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:paddingRight="5dp"
+                android:id="@+id/img_ages"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/btn_xiyibu" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ECECEC"
+            />
+
+        <!--修改密码-->
+
+        <RelativeLayout
+            android:id="@+id/rl_repass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="修改密码"
+                android:layout_marginLeft="19dp"
+                android:gravity="center"
+                android:textColor="#313131"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="19dp" />
+
+
+
+            <ImageButton
+                android:id="@+id/img_height"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/btn_xiyibu" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ECECEC"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

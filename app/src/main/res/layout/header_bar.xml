@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:id="@+id/header_all"
+    android:background="#FF61B4"
+    android:orientation="vertical"
+    >
+
+   <include layout="@layout/header_bar_small"></include>
+
+    <TextView
+        android:id="@+id/pick_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2017年9月4日"
+        android:textSize="15dp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

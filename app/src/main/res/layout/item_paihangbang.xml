@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <test.com.shoushi.view.CircleImageView
+            android:id="@+id/paihang_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_yonghumr" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/paihang_haoyou_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.5dp"
+                    android:text="懒猫" />
+
+                <TextView
+                    android:id="@+id/paihang_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第 6 名"
+                    android:textColor="#C1C1C1"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/paihang_runs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/linear_dianzang"
+                android:layout_marginRight="15dp"
+                android:text="332323"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#FFA050"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_dianzang"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/paihang_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="888"
+                    android:gravity="center"
+                    />
+                <ImageView
+                    android:id="@+id/paihang_xin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_z_wdian"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

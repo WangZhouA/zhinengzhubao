@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/item_HuiFu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        >
+
+
+        <TextView
+            android:id="@+id/pinglun_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="小洲洲"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text=":"
+            android:textColor="#242424"
+
+            />
+
+        <TextView
+            android:id="@+id/wu_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="老铁双5555555555555566"
+
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/et_text_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_edit"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/item_PeiHuiFu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/bei_pinglun_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="小洲洲"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="回复"
+            android:gravity="center"
+            android:textColor="#242424" />
+
+        <TextView
+            android:id="@+id/beidong_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="小鸭子"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=":"
+            android:textColor="#242424" />
+
+        <TextView
+            android:id="@+id/you_huifu_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:layout_height="wrap_content"
+
+      >
+    <EditText
+        android:id="@+id/add_ed"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:drawableLeft="@mipmap/btn_haoyou_sousuo"
+        android:paddingLeft="10dp"
+        android:background="@drawable/ed_bg"
+        android:layout_marginLeft="10dp"
+        android:maxLength="11"
+        android:layout_marginTop="10dp"
+        android:hint="输入好友号码或昵称搜索"
+        android:textSize="15dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:layout_weight="9"
+        />
+
+      <Button
+          android:id="@+id/sousuo_btn"
+          android:layout_marginTop="10dp"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:text="取消"
+          android:layout_weight="1"
+          android:background="@null"
+          />
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_lin_sousuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img_d_yonghu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="找人："
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/tv_sousuo_tiaojian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#EDEDED"></View>
+
+    </LinearLayout>
+
+</LinearLayout>

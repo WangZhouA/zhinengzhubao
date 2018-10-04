@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+
+    >
+
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@mipmap/bg_liebiao"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:id="@+id/dervice_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="name"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_back_dervice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/btn_riqi_you"
+            android:gravity="center"
+            android:textColor="#FF61B4"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

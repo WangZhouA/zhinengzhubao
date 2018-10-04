@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <test.com.shoushi.view.CircleImageView
+            android:id="@+id/item_yonghu"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/img_yonghumr" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="懒猫" />
+
+            <TextView
+                android:id="@+id/item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="111111111111111111111111111111111" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/layout_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/im_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/img_yonghumr"
+
+
+                        />
+                    <ImageView
+                        android:id="@+id/im_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/img_yonghumr"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/im_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/img_yonghumr"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/layout_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/im_four"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/img_yonghumr"
+                        android:layout_weight="1"
+                        />
+                    <ImageView
+                        android:id="@+id/im_five"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/img_yonghumr"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        />
+                    <ImageView
+                        android:id="@+id/im_six"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/img_yonghumr"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/layout_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/im_seven"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/img_yonghumr"
+                        android:layout_weight="1"
+                        />
+                    <ImageView
+                        android:id="@+id/im_eight"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/img_yonghumr"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        />
+                    <ImageView
+                        android:id="@+id/im_nine"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/img_yonghumr"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <test.com.shoushi.view.NoScrollGridView
+                android:id="@+id/Scrollgridview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:minHeight="50dp"
+                android:visibility="gone"
+                ></test.com.shoushi.view.NoScrollGridView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="8分钟之前" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/item_dianzang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/btn_z_wdian"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/item_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:text="88"
+                        android:textColor="#C5C5C5"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/item_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/btn_pinglun" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!--评论回复-->
+
+            <test.com.shoushi.view.ListViewForScrollView
+                android:id="@+id/item_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></test.com.shoushi.view.ListViewForScrollView>
+
+            <TextView
+                android:id="@+id/tx_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王洲大帅哥给我显示出来"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

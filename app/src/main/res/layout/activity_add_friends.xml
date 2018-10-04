@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/header_bar_small"></include>
+
+    <EditText
+        android:id="@+id/add_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableLeft="@mipmap/btn_haoyou_sousuo"
+        android:paddingLeft="10dp"
+        android:background="@drawable/ed_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="输入好友号码搜索"
+        android:textSize="15dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:maxLength="11"
+        android:digits="0123456789"
+
+        />
+<!--  android:visibility="invisible"-->
+
+
+    <LinearLayout
+        android:id="@+id/zhudong_shen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        >
+
+        <test.com.shoushi.view.CircleImageView
+            android:id="@+id/haoyou_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_yonghumr"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/haoyou_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="懒猫"
+                android:layout_centerVertical="true"
+                />
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="#979797"-->
+                <!--&gt;</View>-->
+
+            <Button
+                android:id="@+id/add_tianjia"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="添加"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/haoyouhudong_bg"
+                android:layout_marginRight="20dp"
+                android:textColor="#FF61B4"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#E9E9E9"
+        ></View>
+    </LinearLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/lists_friends_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+      >
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+</LinearLayout>
